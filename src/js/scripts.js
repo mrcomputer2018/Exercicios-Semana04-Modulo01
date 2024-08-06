@@ -13,3 +13,5 @@ function multiplicacao(numero1, numero2) {
 function divisao(numero1, numero2) {
   return numero1 / numero2;
 }
+
+const form = document.querySelector('form');

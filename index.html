@@ -41,22 +41,13 @@
                     <label for="inputNumero2" class="col-form-label">Operação:</label>
                 </div>
                 <div class="col-auto">
-                    <div class="dropdown">
-                        <button 
-                        class="btn btn-secondary dropdown-toggle" 
-                        type="button" 
-                        data-bs-toggle="dropdown" 
-                        aria-expanded="false">
-                            Selecione a opereção...
-                        </button>
-
-                        <ul class="dropdown-menu">
-                          <li><button class="dropdown-item" type="button">Soma</button></li>
-                          <li><button class="dropdown-item" type="button">Subtração</button></li>
-                          <li><button class="dropdown-item" type="button">Divisão</button></li>
-                          <li><button class="dropdown-item" type="button">Multiplicação</button></li>
-                        </ul>
-                      </div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Selecione a operacao...</option>
+                        <option value="1">Soma</option>
+                        <option value="2">Subtração</option>
+                        <option value="3">Divisão</option>
+                        <option value="3">Multiplicação</option>
+                    </select>
                 </div>
             </div>
 
