@@ -30,7 +30,7 @@ form.addEventListener('submit', function(event) {
     const operacao = parseInt(select.value);
     
     console.log('select:', select.value);
-
+    // validacao dos dados
     if (isNaN(numero1) || isNaN(numero2)) {
         alert('Por favor, digite um número válido.');
         return
