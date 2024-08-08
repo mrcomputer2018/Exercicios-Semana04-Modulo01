@@ -24,7 +24,7 @@ const select = document.querySelector('select');
 
 const span = document.querySelector('.spanNumero1');
 
-console.log(span);
+//document.getElementById("demo").innerHTML = x + y;
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -36,7 +36,6 @@ form.addEventListener('submit', function(event) {
     console.log('select:', select.value);
     // validacao dos dados
     if (isNaN(numero1) || isNaN(numero2)) {
-        alert('Por favor, digite um número válido.');
         span.innerHTML = '<p class="text-danger">Por favor, digite um número válido!!!</p>'
         return
     }
