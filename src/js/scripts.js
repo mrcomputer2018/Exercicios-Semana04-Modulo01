@@ -25,23 +25,27 @@ function validarNumero(numero) {
 
 function gerarResultado(numero1, numero2, operacao) {
     if (operacao === 1) {
-        alert('O resultado da soma é: ' + soma(numero1, numero2));
+        //alert('O resultado da soma é: ' + soma(numero1, numero2));
         return soma(numero1, numero2);
     }
 
     if (operacao === 2) {
-        alert('O resultado da subtração é: ' + subtracao(numero1, numero2));
+        //alert('O resultado da subtração é: ' + subtracao(numero1, numero2));
         return subtracao(numero1, numero2);
     }
 
     if (operacao === 3) {
-        alert('O resultado da multiplicação é: ' + multiplicacao(numero1, numero2));
+        //alert('O resultado da multiplicação é: ' + multiplicacao(numero1, numero2));
         return multiplicacao(numero1, numero2);
     }
 
     if (operacao === 4) {
-        alert('O resultado da divisão é: ' + divisao(numero1, numero2));
+        //alert('O resultado da divisão é: ' + divisao(numero1, numero2));
         return divisao(numero1, numero2);
+    }
+
+    if (operacao === "") {
+        return false;
     }
  }
 
@@ -58,8 +62,6 @@ const span = document.querySelector('.spanNumero1');
 const span2 = document.querySelector('.spanNumero2');
 
 const spanResultado = document.getElementById ('txt-resultado');
-
-console.log(spanResultado);
 
 //document.getElementById("demo").innerHTML = x + y;
 
@@ -91,6 +93,11 @@ form.addEventListener('submit', function(event) {
 
     //alert('O resultado é: ' + resultado);
 
-    spanResultado.innerText = `O resultado é: ${resultado}`;
+    if (resultado === undefined) {
+        spanResultado.innerText = 'Por favor, selecione uma operação!!!';
+        return
+    }
+
+    spanResultado.innerText = `O resultado da ${operacao} é: ${resultado}`;
 });
 
