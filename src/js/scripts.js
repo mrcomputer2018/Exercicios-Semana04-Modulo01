@@ -55,7 +55,9 @@ const select = document.querySelector('select');
 
 const span = document.querySelector('.spanNumero1');
 
-const span2 = document.querySelector('.spanNumero2');   
+const span2 = document.querySelector('.spanNumero2');
+
+const spanResultado = document.getElementById ('text-resultado');
 
 //document.getElementById("demo").innerHTML = x + y;
 
@@ -85,6 +87,8 @@ form.addEventListener('submit', function(event) {
 
     const resultado = gerarResultado(numero1, numero2, operacao);
 
-    alert('O resultado é: ' + resultado);
+    //alert('O resultado é: ' + resultado);
+
+    spanRseultado.innerText = `O resultado é: ${resultado}`;
 });
 
