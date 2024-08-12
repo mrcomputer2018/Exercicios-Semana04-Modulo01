@@ -83,6 +83,8 @@ form.addEventListener('submit', function(event) {
         return
     }
 
-    gerarResultado(numero1, numero2, operacao);
+    const resultado = gerarResultado(numero1, numero2, operacao);
+
+    alert('O resultado é: ' + resultado);
 });
 
