@@ -1,3 +1,5 @@
+console.log("Script funcionando")
+
 function soma(numero1, numero2) {
    return numero1 + numero2;
 }
@@ -39,6 +41,11 @@ form.addEventListener('submit', function(event) {
         span.innerHTML = '<p class="text-danger">Por favor, digite um número válido!!!</p>'
         return
     }
+
+    if (isNaN(numero2)) {
+        span.innerHTML = '<p class="text-danger">Por favor, digite um número válido!!!</p>'
+        return
+    }    
 
     if (operacao === 1) {
         const resultado = soma(numero1, numero2);
